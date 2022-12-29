@@ -6,5 +6,10 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [{ "handle": "filesystem" }, { "src": "/(.*)", "status": 404, "dest": "/other-404.html" }]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
